@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ropert_nathan_tpjavafx.Jeux">
+   <children>
+      <ImageView fitHeight="443.0" fitWidth="610.0">
+         <image>
+            <Image url="@image/backgroundJeux.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="69.0" layoutY="-14.0" translateX="340.0" translateY="208.0">
+         <image>
+            <Image url="@image/Emprinte.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="205.0" scaleZ="2.0" translateX="-31.0" translateY="107.0">
+         <image>
+            <Image url="@image/BackgroundScore2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="53.0" translateX="208.0" translateY="210.0">
+         <image>
+            <Image url="@image/cerveaux.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutY="-8.0" translateX="20.0" translateY="158.0">
+         <image>
+            <Image url="@image/tropherMenu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="28.0" opacity="0.75" translateX="222.0" translateY="163.0">
+         <image>
+            <Image url="@image/blanc.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="20.0" layoutY="20.0" opacity="0.94" translateX="479.0" translateY="143.0">
+         <image>
+            <Image url="@image/blanc.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="178.0" layoutX="-12.0" translateX="-30.0" translateY="18.0">
+         <image>
+            <Image url="@image/BackgroundScore.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="252.0" translateX="-52.0" translateY="31.0">
+         <image>
+            <Image url="@image/BackgroundScore1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="10.0" layoutY="10.0" opacity="0.94" translateX="349.0" translateY="153.0">
+         <image>
+            <Image url="@image/blanc.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutY="-14.0" prefHeight="457.0" prefWidth="605.0">
+         <children>
+            <BorderPane prefHeight="438.0" prefWidth="600.0">
+               <top>
+                  <Label text="Zombie Dice" translateY="9.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="10.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="Impact" size="29.0" />
+                     </font>
+                  </Label>
+               </top>
+               <left>
+                  <VBox prefHeight="354.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="179.0">
+                           <children>
+                              <Label text="Joueur " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="TourJoueur" text="0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label prefHeight="21.0" prefWidth="176.0" text="Cerveaux Actuelle :" translateX="-6.0" translateY="4.0">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="63.0" prefWidth="153.0">
+                           <children>
+                              <Label fx:id="ScoreActuelle" prefHeight="17.0" prefWidth="20.0" text="0" textFill="WHITE" translateX="70.0" translateY="-20.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="25.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label fx:id="ScoreActuelle1" prefHeight="17.0" prefWidth="148.0" text="Score Total :" translateX="6.0" translateY="-20.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="26.0" prefWidth="162.0">
+                           <children>
+                              <Label fx:id="ScoreTotalJoueur" prefHeight="17.0" prefWidth="27.0" scaleZ="-8.0" text="0" textFill="WHITE" translateX="69.0" translateY="-38.0">
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="207.0" prefWidth="438.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Dés Tirés" translateX="8.0" translateY="-17.0">
+                           <VBox.margin>
+                              <Insets left="160.0" top="50.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="0.0" prefWidth="438.0">
+                           <children>
+                              <Label opacity="0.0" text="Dés verts">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label opacity="0.0" text="Dés jaunes">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label opacity="0.0" text="Dés rouges">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="30.0" top="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="52.0" prefWidth="438.0">
+                           <children>
+                              <Label fx:id="DesVerts" onDragDetected="#DesVertsA" text="0" textFill="#14ab00" translateX="13.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="55.0" right="80.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="DesJaunes" onDragDetected="#DesJaunesA" text="0" textFill="#f5d800">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="55.0" right="80.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="DesRouge" onDragDetected="#DesRougeA" text="0" textFill="#ff0101" translateX="-9.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="55.0" right="80.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="41.0" prefWidth="438.0">
+                           <children>
+                              <Label opacity="0.0" prefWidth="88.0" scaleZ="6.0" text="Cerveaux">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label opacity="0.0" prefHeight="27.0" prefWidth="89.0" scaleZ="6.0" text="Empreinte">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label opacity="0.0" prefHeight="27.0" prefWidth="130.0" scaleZ="6.0" text="Fudil a pompe">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="37.0" prefWidth="438.0">
+                           <children>
+                              <Label fx:id="tirage1" text="0" translateX="-3.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" right="30.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="Tirage2" onDragDetected="#TirageDeux" text="0" translateX="9.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" right="30.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="Tirage3" onDragDetected="#TirageTrois" text="0" translateX="9.0">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="75.0" right="30.0" top="5.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="0.0" prefWidth="438.0" />
+                        <Button fx:id="TierDes" mnemonicParsing="false" onAction="#TierLesDes" prefHeight="25.0" prefWidth="69.0" text="Tirer">
+                           <VBox.margin>
+                              <Insets left="170.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+               </center>
+               <bottom>
+                  <Button fx:id="FinTour" mnemonicParsing="false" onAction="#FinDuTour" prefHeight="25.0" prefWidth="109.0" text="Fin de Tour" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="82.0" fitWidth="76.0" layoutY="-19.0" translateX="3.0" translateY="365.0">
+         <image>
+            <Image url="@image/zombieJeux.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="106.0" layoutX="43.0" layoutY="-34.0" rotate="-25.9" translateX="413.0" translateY="244.0">
+         <image>
+            <Image url="@image/shotgun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="53.0" layoutY="-8.0" translateX="207.0" translateY="107.0">
+         <image>
+            <Image url="@image/Des.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="53.0" layoutX="10.0" layoutY="2.0" translateX="334.0" translateY="98.0">
+         <image>
+            <Image url="@image/Des.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="53.0" layoutX="20.0" layoutY="12.0" translateX="464.0" translateY="90.0">
+         <image>
+            <Image url="@image/Des.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="10.0" layoutY="10.0" translateX="21.0" translateY="82.0">
+         <image>
+            <Image url="@image/cerveaux.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
